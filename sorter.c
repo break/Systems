@@ -6,7 +6,6 @@
 
 record* movies; 
 
-
 char * strtok_try (char * str, char const * delims) {
   static char  * src = NULL;
   char  *  p,  * ret = 0;
@@ -26,7 +25,6 @@ char * strtok_try (char * str, char const * delims) {
     ret = src;
     src = NULL;
   }
-
   return ret;
 }
 
@@ -34,9 +32,9 @@ int columnCheck(char * column){
 	for(int i=0;i<28;i++){
 		if(strcmp(column,movieColumns[i])==0){
 			return 1;
-
 		}
-	}return 0;
+	}
+	return 0;
 
 }
 
